@@ -364,8 +364,48 @@ table {
    ========================================================================== */
 @font-face {
   font-family: 'BertholdBaskervilleRegular';
-  src: url("../fonts/berthold_baskerville_regular-webfont.eot");
-  src: url("../fonts/berthold_baskerville_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/berthold_baskerville_regular-webfont.woff") format("woff"), url("../fonts/berthold_baskerville_regular-webfont.ttf") format("truetype"), url("../fonts/berthold_baskerville_regular-webfont.svg#BertholdBaskervilleRegular") format("svg");
+  src: url("../fonts/Baskerville.eot");
+  src: url("../fonts/Baskerville.eot?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff") format("woff"), url("../fonts/Baskerville.ttf") format("truetype"), url("../fonts/Baskerville.svg#BertholdBaskervilleRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BertholdBaskervilleBold';
+  src: url("../fonts/Baskerville-Bold.eot");
+  src: url("../fonts/Baskerville.eot-Bold?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff-Bold") format("woff"), url("../fonts/Baskerville.ttf-Bold") format("truetype"), url("../fonts/Baskerville.svg-Bold#BertholdBaskervilleBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BertholdBaskervilleItalic';
+  src: url("../fonts/Baskerville-Italic.eot");
+  src: url("../fonts/Baskerville.eot-Italic?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff-Italic") format("woff"), url("../fonts/Baskerville.ttf-Italic") format("truetype"), url("../fonts/Baskerville.svg-Italic#BertholdBaskervilleItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BertholdBaskervilleBoldItalic';
+  src: url("../fonts/Baskerville-BoldItalic.eot");
+  src: url("../fonts/Baskerville.eot-BoldItalic?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff-BoldItalic") format("woff"), url("../fonts/Baskerville.ttf-BoldItalic") format("truetype"), url("../fonts/Baskerville.svg-BoldItalic#BertholdBaskervilleBoldItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BertholdBaskervilleSemiBold';
+  src: url("../fonts/Baskerville-SemiBold.eot");
+  src: url("../fonts/Baskerville.eot-SemiBold?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff-SemiBold") format("woff"), url("../fonts/Baskerville.ttf-SemiBold") format("truetype"), url("../fonts/Baskerville.svg-SemiBold#BertholdBaskervilleSemiBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BertholdBaskervilleSemiBoldItalic';
+  src: url("../fonts/Baskerville-SemiBoldItalic.eot");
+  src: url("../fonts/Baskerville.eot-SemiBoldItalic?#iefix") format("embedded-opentype"), url("../fonts/Baskerville.woff-SemiBoldItalic") format("woff"), url("../fonts/Baskerville.ttf-SemiBoldItalic") format("truetype"), url("../fonts/Baskerville.svg-SemiBoldItalic#BertholdBaskervilleSemiBoldItalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -376,7 +416,27 @@ table {
 /* =============================================================================
    Layout
    ========================================================================== */
-/* line 9, _sass/partials/_layout.scss */
+/* line 8, _sass/partials/_layout.scss */
+h1, h2 {
+  font-weight: lighter;
+  letter-spacing: -2px;
+  color: black;
+  margin-bottom: 0px;
+  font-family: "BertholdBaskervilleRegular", "Trebuchet MS", "Times New Roman", sans-serif;
+}
+
+/* line 16, _sass/partials/_layout.scss */
+h1 {
+  font-size: 25px;
+}
+
+/* line 20, _sass/partials/_layout.scss */
+h2 {
+  font-size: 18px;
+  color: gray;
+}
+
+/* line 25, _sass/partials/_layout.scss */
 body {
   width: 100%;
   height: 512px;
@@ -385,7 +445,7 @@ body {
   background-repeat: repeat-x;
 }
 
-/* line 17, _sass/partials/_layout.scss */
+/* line 33, _sass/partials/_layout.scss */
 #container {
   position: relative;
   width: 960px;
@@ -393,20 +453,69 @@ body {
   margin-left: -480px;
 }
 
-/* line 24, _sass/partials/_layout.scss */
+/* line 40, _sass/partials/_layout.scss */
 header {
   margin-top: 50px;
+}
+/* line 43, _sass/partials/_layout.scss */
+header div#logo {
+  float: left;
+  width: 350px;
+  border: 0px solid #000;
+}
+/* line 48, _sass/partials/_layout.scss */
+header div#logo img {
+  float: left;
+  margin-right: 10px;
+}
+/* line 53, _sass/partials/_layout.scss */
+header div#logo h1 {
+  font-size: 30px;
+  margin-top: 18px;
+}
+/* line 58, _sass/partials/_layout.scss */
+header div#logo h2 {
+  margin-top: 4px;
+}
+/* line 63, _sass/partials/_layout.scss */
+header nav {
+  float: right;
+  margin-top: 60px;
   font-family: "BertholdBaskervilleRegular", "Trebuchet MS", "Times New Roman", sans-serif;
 }
-/* line 28, _sass/partials/_layout.scss */
-header h1, header h2 {
-  font-weight: lighter;
-  letter-spacing: -2px;
-  color: black;
+/* line 68, _sass/partials/_layout.scss */
+header nav li {
+  display: block;
+  float: left;
 }
-/* line 34, _sass/partials/_layout.scss */
-header h2 {
-  color: gray;
+/* line 73, _sass/partials/_layout.scss */
+header nav li a {
+  display: block;
+  border: 1px solid #cccccc;
+  border-width: 0px 0px 3px 0px;
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+}
+/* line 83, _sass/partials/_layout.scss */
+header nav li a, header nav li a:active {
+  color: #000;
+}
+/* line 87, _sass/partials/_layout.scss */
+header nav li a:hover {
+  border-color: #e82224;
+}
+/* line 94, _sass/partials/_layout.scss */
+header hr {
+  border-color: #fff;
+  clear: both;
+}
+
+/* line 100, _sass/partials/_layout.scss */
+div#main {
+  margin-top: 80px;
 }
 
 /* =============================================================================
