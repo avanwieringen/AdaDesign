@@ -3,72 +3,12 @@
    ========================================================================== */
 
 @font-face {
-    font-family: 'BertholdBaskervilleRegular';
-    src: url('../fonts/Baskerville.eot');
-    src: url('../fonts/Baskerville.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff') format('woff'),
-         url('../fonts/Baskerville.ttf') format('truetype'),
-         url('../fonts/Baskerville.svg#BertholdBaskervilleRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BertholdBaskervilleBold';
-    src: url('../fonts/Baskerville-Bold.eot');
-    src: url('../fonts/Baskerville.eot-Bold?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff-Bold') format('woff'),
-         url('../fonts/Baskerville.ttf-Bold') format('truetype'),
-         url('../fonts/Baskerville.svg-Bold#BertholdBaskervilleBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BertholdBaskervilleItalic';
-    src: url('../fonts/Baskerville-Italic.eot');
-    src: url('../fonts/Baskerville.eot-Italic?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff-Italic') format('woff'),
-         url('../fonts/Baskerville.ttf-Italic') format('truetype'),
-         url('../fonts/Baskerville.svg-Italic#BertholdBaskervilleItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BertholdBaskervilleBoldItalic';
-    src: url('../fonts/Baskerville-BoldItalic.eot');
-    src: url('../fonts/Baskerville.eot-BoldItalic?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff-BoldItalic') format('woff'),
-         url('../fonts/Baskerville.ttf-BoldItalic') format('truetype'),
-         url('../fonts/Baskerville.svg-BoldItalic#BertholdBaskervilleBoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BertholdBaskervilleSemiBold';
-    src: url('../fonts/Baskerville-SemiBold.eot');
-    src: url('../fonts/Baskerville.eot-SemiBold?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff-SemiBold') format('woff'),
-         url('../fonts/Baskerville.ttf-SemiBold') format('truetype'),
-         url('../fonts/Baskerville.svg-SemiBold#BertholdBaskervilleSemiBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'BertholdBaskervilleSemiBoldItalic';
-    src: url('../fonts/Baskerville-SemiBoldItalic.eot');
-    src: url('../fonts/Baskerville.eot-SemiBoldItalic?#iefix') format('embedded-opentype'),
-         url('../fonts/Baskerville.woff-SemiBoldItalic') format('woff'),
-         url('../fonts/Baskerville.ttf-SemiBoldItalic') format('truetype'),
-         url('../fonts/Baskerville.svg-SemiBoldItalic#BertholdBaskervilleSemiBoldItalic') format('svg');
+    font-family: 'bvregular';
+    src: url('../fonts/bv.eot');
+    src: url('../fonts/bv.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bv.woff') format('woff'),
+         url('../fonts/bv.ttf') format('truetype'),
+         url('../fonts/bv.svg#bvregular') format('svg');
     font-weight: normal;
     font-style: normal;
 

@@ -2,23 +2,24 @@
    Layout
    ========================================================================== */
 
-$dim-site-width: 960px;
-$font-headers: 'BertholdBaskervilleRegular', 'Trebuchet MS', 'Times New Roman', sans-serif;
+$dim-site-width: 800px;
+$font-headers: 'bvregular', 'Trebuchet MS', 'Times New Roman', sans-serif;
+$font-body: 'Trebuchet MS', 'Times New Roman', sans-serif;
 
 h1, h2 {
     font-weight: lighter;
     letter-spacing: -2px;
     color: $color-font-header;
     margin-bottom: 0px;
-    font-family: $font-headers;
+    font-family: $font-headers !important;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 25px  !important;
 }    
 
 h2 {
-    font-size: 18px;
+    font-size: 18px  !important;
     color: lighten($color-font-header, 50%);
 }    
 
@@ -35,6 +36,15 @@ body {
     width: $dim-site-width;
     left: 50%;
     margin-left: -$dim-site-width/2;
+    background-color: $color-main-background;
+    padding-bottom: 16px; 
+}
+
+#footerContainer {
+    position: relative;
+    width: $dim-site-width;
+    left: 50%;
+    margin-left: -$dim-site-width/2;
 }
 
 header {
@@ -42,28 +52,31 @@ header {
     
     div#logo {
         float: left;
-        width: 350px;
+        width: 280px;
         border: 0px solid #000;
         
         img {
             float: left;
             margin-right: 10px;
+            width: 120px;
         }
         
         h1 {
-            font-size: 30px;
+            font-size: 20px !important;
             margin-top: 18px;
         }
 
         h2 {
             margin-top: 4px;
+            font-size: 16px !important;
         }
     }
     
     nav {
         float: right;
         margin-top: 60px;
-        font-family: $font-headers;
+        margin-right: 32px;
+        font-family: $font-headers !important;
         
         li {
             display: block;
@@ -74,11 +87,12 @@ header {
                 display: block;
                 border: 1px solid lighten($color-font-header, 80%);
                 border-width: 0px 0px 3px 0px;
-                width: 100px;
+                width: 73px;
                 margin-left: 10px;
                 cursor: pointer;
                 text-align: center;
-                font-size: 18px;
+                font-size: 15px !important;
+                text-decoration: none;
                 
                 &, &:active {
                     color: #000;
@@ -86,6 +100,10 @@ header {
                 
                 &:hover {
                     border-color: $color-menu-underline;
+                }
+                
+                span {
+                    color: #000;
                 }
             }
         }
@@ -98,5 +116,37 @@ header {
 }
 
 div#main {
+    margin: 80px 64px 0px 16px;
+    
+    * {
+        font-family: $font-body;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    blockquote {
+        font-style: italic;
+        color: lighten(#000, 50%);
+        float: right;
+    }       
+    
+    img {
+        margin: 0px 16px;
+    }
+}
+
+
+footer {
+    background-color: $color-footer-background;
+    color: $color-footer-font;
+    font-family: $font-headers;
+    font-weight: lighter;
+    font-size: 11px;
+    
+    padding: 8px 0px;
     margin-top: 80px;
+    
+    a, a:active {
+        color: $color-footer-font;
+    }
 }
